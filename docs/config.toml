@@ -1,0 +1,3 @@
+baseURL = 'https://walterinsect.github.io/Hugotest/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'

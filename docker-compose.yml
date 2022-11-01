@@ -4,12 +4,12 @@ services:
   build:
     image: klakegg/hugo:0.101.0
     volumes:
-      - ".:/src"
+      - "./myblog:/src"
   server:
     image: klakegg/hugo:0.101.0
     command: server
     volumes:
-      - ".:/src"
+      - "./myblog:/src"
     ports:
       - "1313:1313"
 
