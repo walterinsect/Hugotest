@@ -1,15 +1,8 @@
-version: "3.9"
-
 services:
-  build:
-    image: klakegg/hugo:0.101.0
-    volumes:
-      - "./myblog:/src"
   server:
-    image: klakegg/hugo:0.101.0
-    command: server
+    image: hugomods/hugo:exts-0.141.0
+    command: hugo server --bind 0.0.0.0 --source /src --buildDrafts
     volumes:
-      - "./myblog:/src"
+      - "./docs:/src"
     ports:
       - "1313:1313"
-
