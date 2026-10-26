@@ -1,3 +1,9 @@
 baseURL = 'https://walterinsect.github.io/Hugotest/'
-languageCode = 'en-us'
+languageCode = 'ja'
 title = 'My New Hugo Site'
+# 日本語の記事で .Summary の文字数を正しく扱う
+hasCJKLanguage = true
+
+[markup.goldmark.renderer]
+  # 改行をそのまま <br> にする（ネタ出しメモのような改行区切りの文章向け）
+  hardWraps = true
